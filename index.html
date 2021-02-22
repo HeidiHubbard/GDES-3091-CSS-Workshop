@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="title-container">
+                    <div class="upper-title-container">
+                        <h3>Sweet and Nutty</h3>
+                        <div class="upper-title-line"></div>
+                    </div>
+                    <h1>Apple Butter Cheescake Bars</h1>
+                </div>
+                <div class="toolbar">
+                    <div class="dietary-spec-container">
+                        <div class="dietary-spec dietary-spec-gf">GF</div>
+                        <div class="dietary-spec dietary-spec-vg">VG</div>
+                        <div class="dietary-spec dietary-spec-df">DF</div>
+                        <div class="dietary-spec dietary-spec-ns">NS</div>
+                    </div>
+                    <div class="jump-to-recipe-container">
+                        <a href="#recipe">Jump to Recipe</a>
+                    </div>
+                </div>
+            </header>
+            <article>
+                <section>
+                    <p>
+                        After cracking the code on date-sweetened apple butter,
+                        we wanted to put it to use in something approachable yet
+                        delicious. We settled on cheesecake bars, vegan and
+                        gluten-free, of course. We modified this recipe from
+                        some of our previous cheesecakes, but with a twist:
+                        swirled with apple butter and topped with an delicious
+                        maple oat crumble. Major swoon! The best part? Simple
+                        methods and just 10 wholesome ingredients required. Let
+                        us show you how!
+                    </p>
+                    <figure>
+                        <img alt="Photo of ingredients" src="./images/fig-1.jpg" />
+                    </figure>
+                </section>
+                <section>
+                    <p>These bars consist of four simple components:</p>
+                    <ul>
+                        <li>A 5-ingredient, graham cracker-like crust</li>
+                        <li>A creamy, tangy cashew-coconut filling</li>
+                        <li>Swirls of caramelized apple butter</li>
+                        <li>And an optional maple oat crumble</li>
+                    </ul>
+                    <figure>
+                        <img alt="Photo of blender" src="./images/fig-2.jpg" />
+                    </figure>
+                </section>
+                <section>
+                    <p>
+                        The crust is made in a blender and pressed into a pan.
+                        The base is rolled oats, almonds, and sea salt with
+                        maple syrup for sweetness and coconut oil for binding.
+                        When combined, the taste is reminiscent of graham
+                        crackers!
+                    </p>
+                    <figure>
+                        <img alt="Photo of crust" src="./images/fig-3.jpg" />
+                    </figure>
+                </section>
+                <section>
+                    <p>
+                        For the filling, we used cashews and coconut to make it
+                        rich and creamy with arrowroot or cornstarch to help it
+                        thicken. Lemon juice adds tang and lemon zest adds
+                        tartness to balance the sweetness from the maple syrup.
+                        Apple butter swirls add bites of cinnamony sweetness
+                        that further balance the tanginess of the cashew-coconut
+                        filling.
+                    </p>
+                    <figure>
+                        <img alt="Photo of spreading the apple butter"  src="./images/fig-4.jpg" />
+                    </figure>
+                </section>
+                <section>
+                    <p>
+                        The optional crumble topping resembles that of an apple
+                        crisp and gives it that final icing on the (cheese)cake!
+                    </p>
+                    <figure>
+                        <img alt="Photo of crumbling"  src="./images/fig-5.jpg" />
+                    </figure>
+                </section>
+                <section>
+                    <p>We hope you LOVE these cheesecake bars! They’re:</p>
+                    <ul>
+                        <li>Tangy</li>
+                        <li>Apple-infused</li>
+                        <li>Perfectly sweet</li>
+                        <li>Cinnamon-swirled</li>
+                        <li>Delicious</li>
+                    </ul>
+                    <p>
+                        They’re a decadent fall and winter dessert perfect for
+                        making ahead and enjoying any time you’re craving
+                        something sweet yet wholesome.
+                    </p>
+                    <figure>
+                        <img alt="Photo of the finished product"  src="./images/fig-6.jpg" />
+                    </figure>
+                </section>
+            </article>
+            <article id="recipe">
+                <section>
+                    <div class="title-container">
+                        <div class="upper-title-container">
+                            <h3>Sweet and Nutty</h3>
+                            <div class="upper-title-line"></div>
+                        </div>
+                        <h1>Apple Butter Cheescake Bars</h1>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat">
+                            <h3>Prep</h3>
+                            <span>7 hr</span>
+                        </div>
+                        <div class="stat middle">
+                            <h3>Cook</h3>
+                            <span>45 min</span>
+                        </div>
+                        <div class="stat">
+                            <h3>Serves</h3>
+                            <span>16</span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="tabs-container">
+                        <div class="tabbar-container">
+                            <div
+                                id="ingredients-tab-button"
+                                class="tab-button"
+                                selected="true"
+                                onclick="selectIngredients()"
+                            >
+                                Ingredients
+                            </div>
+                            <div
+                                id="utensils-tab-button"
+                                class="tab-button middle"
+                                onclick="selectUtensils()"
+                            >
+                                Utensils
+                            </div>
+                            <div
+                                id="method-tab-button"
+                                class="tab-button"
+                                onclick="selectMethod()"
+                            >
+                                Method
+                            </div>
+                        </div>
+
+                        <div class="tab" selected="true" id="ingredients-tab">
+                            <div>
+                                <h4>APPLE SWIRL</h4>
+                                <ul>
+                                    <li>170g buckwheat linguine</li>
+                                </ul>
+                                <h4>CRUST</h4>
+                                <ul>
+                                    <li>
+                                        1 cup rolled oats (gluten-free for GF
+                                        eaters)
+                                    </li>
+                                    <li>1 cup raw almonds</li>
+                                    <li>1/4 tsp sea salt</li>
+                                    <li>2 Tbsp maple syrup</li>
+                                    <li>2 Tbsp maple syrup</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>FILLING</h4>
+                                <ul>
+                                    <li>1 cup raw cashews</li>
+                                    <li>1 cup coconut cream *</li>
+                                    <li>1 ½ Tbsp arrowroot or cornstarch</li>
+                                    <li>2 tsp lemon zest</li>
+                                    <li>3 Tbsp lemon juice</li>
+                                    <li>1 pinch sea salt</li>
+                                    <li>1/4 cup maple syrup</li>
+                                    <li>1/2 tsp ground cinnamon</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>
+                                    CRUMBLE TOPPING
+                                    <span class="optional">(OPTIONAL)</span>
+                                </h4>
+                                <ul>
+                                    <li>1 cup coconut cream *</li>
+                                    <li>1 ½ Tbsp arrowroot or cornstarch</li>
+                                    <li>2 tsp lemon zest</li>
+                                    <li>3 Tbsp lemon juice</li>
+                                    <li>1 pinch sea salt</li>
+                                    <li>1/4 cup maple syrup</li>
+                                    <li>1/2 tsp ground cinnamon</li>
+                                </ul>
+                                <footnote>
+                                    <p>
+                                        * Our favorite coconut cream is Savoy
+                                        brand. I highly recommend coconut cream
+                                        over full-fat coconut milk. But if you
+                                        can’t find coconut cream, buy a couple
+                                        of cans of full-fat coconut milk and
+                                        scoop the cream off the top.
+                                    </p>
+                                </footnote>
+                            </div>
+                        </div>
+
+                        <div class="tab" id="utensils-tab">
+                            <ul>
+                                <li>Blender</li>
+                                <li>Spatula</li>
+                                <li>Deep Sauce Pan</li>
+                                <li>2 Tbsp Maple Syrup</li>
+                                <li>Lemon Juicer</li>
+                                <li>9 Small Mixing Bowls</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab" id="method-tab">
+                            <ol>
+                                <li>
+                                    If you haven’t prepared your apple butter
+                                    yet, do so at this time and allow it to
+                                    fully cool. Alternatively, use store-bought.
+                                </li>
+                                <li>
+                                    Add raw cashews (for filling) to a glass
+                                    measuring cup or mixing bowl and cover with
+                                    boiling hot water. Let rest for 30 minutes
+                                    uncovered. Then drain thoroughly.
+                                </li>
+                                <li>
+                                    In the meantime, preheat oven to 350 degrees
+                                    F and line an 8×8 inch baking dish with
+                                    parchment paper.
+                                </li>
+                                <li>
+                                    Add oats, almonds, and sea salt to a
+                                    high-speed blender and mix on high until a
+                                    fine meal is achieved.
+                                </li>
+                                <li>
+                                    Transfer to a medium mixing bowl and add
+                                    maple syrup and melted coconut oil, starting
+                                    with the lesser end of the range (4 Tbsp or
+                                    60 g as original recipe is written // adjust
+                                    if altering batch size) and adding more if
+                                    it’s too dry. Stir with a spoon to combine
+                                    until a loose dough is formed. You should be
+                                    able to squeeze the mixture between two
+                                    fingers and form a dough instead of it
+                                    crumbling. If too dry, add a bit more melted
+                                    coconut oil.
+                                </li>
+                                <li>
+                                    Transfer mixture to parchment-lined baking
+                                    pan and spread evenly. Then place parchment
+                                    paper on top and use a flat-bottomed object,
+                                    such as a drinking glass, to press down
+                                    firmly until it’s evenly distributed and
+                                    well packed.
+                                </li>
+                                <li>
+                                    Bake for 15 minutes, then increase heat to
+                                    375 F and bake for 4-6 minutes more, or
+                                    until the edges are golden brown and there
+                                    is some browning on the surface. Remove from
+                                    oven to cool slightly, then reduce oven heat
+                                    to 350 degrees F.
+                                </li>
+                                <li>
+                                    Once cashews are soaked and drained, add to
+                                    a high-speed blender with coconut cream,
+                                    arrowroot starch, lemon zest, lemon juice,
+                                    sea salt, maple syrup, and cinnamon. Blend
+                                    on high until very creamy and smooth,
+                                    scraping down sides as needed.
+                                </li>
+                                <li>
+                                    Taste and adjust flavor as needed. I added a
+                                    bit more lemon zest for tanginess, or you
+                                    can add maple syrup for sweetness. It should
+                                    be a balanced flavor — both lemony and
+                                    sweet. Set aside.
+                                </li>
+                                <li>
+                                    To the crust, add a few spoonfuls of your
+                                    apple butter and spread into a thin layer
+                                    (it won’t cover it entirely or evenly —
+                                    that’s okay). Then pour all of the
+                                    cheesecake filling on top and spread into an
+                                    even layer. Tap on the counter to remove any
+                                    air bubbles.
+                                </li>
+                                <li>
+                                    Add the remaining apple butter in small
+                                    spoonfuls and use a toothpick or knife to
+                                    create a swirled effect.
+                                </li>
+                                <li>
+                                    OPTIONAL CRUMBLE: To a small bowl add oats,
+                                    almond flour, salt, cinnamon, coconut oil,
+                                    and maple syrup and mix to combine until a
+                                    loose crumble forms. If too wet, add more
+                                    almond flour. If too dry, add more maple
+                                    syrup. Sprinkle the crumble evenly over the
+                                    cheesecake.
+                                </li>
+                                <li>
+                                    Bake for 20-25 minutes or until the edges
+                                    look very slightly dry and the center
+                                    appears “jiggly” but not liquidy. It will be
+                                    a little golden brown on top (especially
+                                    around the edges) but only slightly. Resist
+                                    the temptation to overbake.
+                                </li>
+                                <li>
+                                    Let rest for 10 minutes, then loosely cover
+                                    with parchment paper and transfer to the
+                                    refrigerator to chill for at least 6-8 hours
+                                    or until totally set (preferably overnight).
+                                </li>
+                                <li>
+                                    To serve, gently lift out of the baking dish
+                                    and slice into even bars (as the recipe is
+                                    written, ~16). Store leftovers in the
+                                    refrigerator (covered) for up to 4 days, or
+                                    in the freezer for up to 1 month, though
+                                    best within the first 2 days.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <h2>Video</h2>
+                    <div>
+                        <iframe
+                            width="100%"
+                            height="552px"
+                            src="https://www.youtube.com/embed/37BF5f5bZ4s"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <h2>Nutrition (1 of 16 servings)</h2>
+                    <ul>
+                        <li>Calories: 212</li>
+                        <li>Carbohydrates: 19 g</li>
+                        <li>Protein: 3.9 g</li>
+                        <li>Fat: 14.2 g</li>
+                        <li>Saturated Fat: 6.8 g</li>
+                        <li>Polyunsaturated Fat: 1.63 g</li>
+                        <li>Monounsaturated Fat: 4.52 g</li>
+                        <li>Trans Fat: 0 g</li>
+                        <li>Cholesterol: 0 mg</li>
+                        <li>Sodium: 7 mg</li>
+                        <li>Potassium: 182 mg</li>
+                        <li>Fiber: 2.5 g</li>
+                        <li>Sugar: 8.6 g</li>
+                        <li>Vitamin A: 13.42 IU</li>
+                        <li>Vitamin C: 2.33 mg</li>
+                        <li>Calcium: 35.61 mg</li>
+                        <li>Iron: 1.1 mg</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+
+        <footer>
+            <a href="https://minimalistbaker.com/apple-butter-cheesecake-bars-vegan-gf/">
+                <img src="./images/footer.png" alt="RECIPE COURTESY OF" width="250px" />
+            </a>
+        </footer>
+
+        <script>
+            const ingredientsTabButton = document.getElementById(
+                "ingredients-tab-button"
+            );
+            const methodTabButton = document.getElementById(
+                "method-tab-button"
+            );
+            const utensilsTabButton = document.getElementById(
+                "utensils-tab-button"
+            );
+
+            const ingredientsTab = document.getElementById("ingredients-tab");
+            const methodTab = document.getElementById("method-tab");
+            const utensilsTab = document.getElementById("utensils-tab");
+
+            function selectIngredients() {
+                ingredientsTabButton.setAttribute("selected", true);
+                methodTabButton.setAttribute("selected", false);
+                utensilsTabButton.setAttribute("selected", false);
+
+                ingredientsTab.setAttribute("selected", true);
+                methodTab.setAttribute("selected", false);
+                utensilsTab.setAttribute("selected", false);
+            }
+
+            function selectMethod() {
+                ingredientsTabButton.setAttribute("selected", false);
+                methodTabButton.setAttribute("selected", true);
+                utensilsTabButton.setAttribute("selected", false);
+
+                ingredientsTab.setAttribute("selected", false);
+                methodTab.setAttribute("selected", true);
+                utensilsTab.setAttribute("selected", false);
+            }
+
+            function selectUtensils() {
+                ingredientsTabButton.setAttribute("selected", false);
+                methodTabButton.setAttribute("selected", false);
+                utensilsTabButton.setAttribute("selected", true);
+
+                ingredientsTab.setAttribute("selected", false);
+                methodTab.setAttribute("selected", false);
+                utensilsTab.setAttribute("selected", true);
+            }
+        </script>
+    </body>
+</html>
